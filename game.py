@@ -21,7 +21,7 @@ def check_valid_guess(guess_number):
     except:
         print "That is not a number."
         guess_number = raw_input("Please enter a new number between 0 and 100: ")
-        check_valid_guess(guess_number)
+        return check_valid_guess(guess_number)
 
 guess_number = (raw_input("Please enter your number: "))
 guess_number = check_valid_guess(guess_number)
